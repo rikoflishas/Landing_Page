@@ -1,0 +1,43 @@
+/*RESET BASICO*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Tipograf[ias y colores*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray:
+}
+
+/*
+.mi-fuente1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mi-fuente2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.parrafo-alt{
+    font-family: "Rubik Wet Paint", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.container{
+    border:2px dashed;
+    color:white;
+    margin-bottom: 40px;
+    padding:10px;
+    height: 200px;
+}
+
+.item{
+    background-color: yellow;
+    color:white;
+    padding:20px;
+    text-align: center;
+    margin:5px;
+    font-size:16px;
+}*/
