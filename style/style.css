@@ -5,10 +5,10 @@
     box-sizing: border-box;
 }
 
-/*Tipograf[ias y colores*/
+/*Tipografías y colores*/
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    color: darkslategray;
+    font-family:"Playfair Display", arial, serif, system-ui;
+    color: rgb(16, 15, 15);
 }
 
 a{
@@ -23,6 +23,16 @@ h1,h2,h3,h4{
 p{
     margin-bottom: 15px;
 }
+
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 400 to 900 */
+
+h1 .playfair-display{
+  /* font-family: "Playfair Display", serif; */
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} 
 
 .container{
     width: 90%;
@@ -66,9 +76,13 @@ header .container{
 
 /* Section Hero */
 .hero{
-    background-color: #f7f7f7;
-    padding: 100px 0;
+    background-image: url("https://missing-pen.com/cdn/shop/collections/graf_von_faber-castell_classic_sterling_silver_missing_pen_Large_1542e799-6e32-4d41-ad8f-b1050a22cee6.jpg?v=1723456104");
+    padding: 200px 0;
     text-align: center;
+    color: #263fa1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero h1{
@@ -93,6 +107,7 @@ header .container{
     background-color: #0056b3;
 }
 
+
 /* Section Características */
 .features{
     padding: 80px 0;
@@ -104,18 +119,28 @@ header .container{
 }
 
 .features-grid{
-    display: flex;
+    display: grid;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    grid-template-columns: repeat(3, 1fr); /* Creates three equal-width columns */
+    gap: 10px; /*space between images*/
+    justify-items: center; /*Centers images within each grid cell*/
 }
 
-.features-item{
+.image-container img{
+    width: 100%;
+    max-width: 200px; /*max width for each image*/
+    height: auto;
+}
+
+/* .features-item{
     flex: 1;
     min-width: 250px;
     max-width: 32%;
     text-align: center;
     margin-bottom: 30px;
-}
+} */
 
 .features-item .icon{
     font-size: 50px;
