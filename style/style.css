@@ -7,6 +7,8 @@
 
 /*Tipografías y colores*/
 body{
+    display: flex;
+    flex-direction: column;
     font-family:"Playfair Display", arial, serif, system-ui;
     color: rgb(16, 15, 15);
 }
@@ -110,7 +112,7 @@ header .container{
 
 /* Section Características */
 .features{
-    padding: 80px 0;
+    padding: 5px 0; 
 }
 
 .features h2{
@@ -123,15 +125,17 @@ header .container{
     justify-content: space-between;
     flex-wrap: wrap;
 
-    grid-template-columns: repeat(3, 1fr); /* Creates three equal-width columns */
+    grid-template-columns: repeat(3, 1fr);/** Creates three equal-width columns **/
     gap: 10px; /*space between images*/
     justify-items: center; /*Centers images within each grid cell*/
 }
 
-.image-container img{
+.image_container img{
     width: 100%;
     max-width: 200px; /*max width for each image*/
-    height: auto;
+    height: 100;
+    object-fit: cover; 
+    border-radius: 30px;
 }
 
 /* .features-item{
@@ -142,10 +146,10 @@ header .container{
     margin-bottom: 30px;
 } */
 
-.features-item .icon{
+/* .features-item .icon{
     font-size: 50px;
     margin-bottom: 20px;
-}
+} */
 
 /* Section testimonials */
 .testimonials{
