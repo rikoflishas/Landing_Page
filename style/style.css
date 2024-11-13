@@ -30,7 +30,7 @@ p{
 /* <weight>: Use a value from 400 to 900 */
 
 h1 .playfair-display{
-  /* font-family: "Playfair Display", serif; */
+  font-family: "Playfair Display", serif; 
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -46,8 +46,9 @@ h1 .playfair-display{
 header{
     position: sticky;
     top: 0;
-    background-color: #f8c8c8;
+    background-color:brown;
     border-bottom: 1px solid #eee;
+    color: #f3dbdb;
 }
 
 header .container{
@@ -109,6 +110,16 @@ header .container{
     background-color: #0056b3;
 }
 
+/* Section marquee */
+.marquee-grid{
+    display: grid;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    grid-template-columns: repeat(6, 1fr);/** Creates three equal-width columns **/
+    gap: 10px; /*space between images*/
+    justify-items: center; /*Centers images within each grid cell*/
+}
 
 /* Section Características */
 .features{
@@ -118,6 +129,10 @@ header .container{
 .features h2{
     text-align: center;
     margin-bottom: 50px;
+}
+
+.features h3{
+    color: rgb(210, 169, 4);
 }
 
 .features-grid{
@@ -134,8 +149,9 @@ header .container{
     width: 100%;
     max-width: 200px; /*max width for each image*/
     height: 100;
-    object-fit: cover; 
     border-radius: 30px;
+    border-color: #74df08;
+    margin: 10px;
 }
 
 /* .features-item{
