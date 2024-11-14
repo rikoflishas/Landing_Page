@@ -116,7 +116,7 @@ header .container{
     justify-content: space-between;
     flex-wrap: wrap;
 
-    grid-template-columns: repeat(6, 1fr);/** Creates three equal-width columns **/
+    grid-template-columns: repeat(6, 1fr);/** Creates six equal-width columns **/
     gap: 10px; /*space between images*/
     justify-items: center; /*Centers images within each grid cell*/
 }
@@ -149,11 +149,18 @@ header .container{
     width: 100%;
     max-width: 200px; /*max width for each image*/
     height: 100;
-    border-radius: 30px;
-    border-color: #74df08;
+    border-radius: 20px;
+    border: #767fd6 solid;
     margin: 10px;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    transition: transform 0.3s;
 }
 
+img:hover{
+    transform: scale(1.06);
+}
 /* .features-item{
     flex: 1;
     min-width: 250px;
